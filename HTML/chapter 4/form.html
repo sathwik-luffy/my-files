@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-html</title>
+</head>
+
+<body>
+    <H1>FORM IN HTML</H1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter name" required>
+        </div>
+        <div>
+            <label for="phone">phone</label>
+            <input id="phone" type="tel" placeholder="Enter phone number" required>
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="enter your email" required>
+        </div>
+        <div>
+            <label for="password">enter your password</label>
+            <input type="password" id="password" placeholder="enter the password" required>
+        </div>
+        <div>
+            <label for="dob">date of birth</label>
+            <input type="date" id="dob" placeholder="dd/mm/yyyy" required>
+        </div>
+        <div>
+            <label for="gender">gender</label>
+            <select id="gender" placeholder="select gender" required>
+                <option value="" disabled selected>select the gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <div>
+            <p>subscription plane</p>
+            <input type="radio" name="subscription" id="basic" value="basic">
+            <label for="basic">basic</label>
+            <input type="radio" name="subscription" id="regular" value="regular">
+            <label for="regular">regular</label>
+            <input type="radio" name="subscription" id="pro" value="pro">
+            <label for="pro">pro</label>
+            <input type="radio" name="subscription" id="legendry" value="legendry">
+            <label for="legendry">legendry</label>
+        </div>
+        <div>
+            <label for="comment">comment</label>
+            <textarea name="label" id="comment" placeholder="enter your coment"></textarea>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

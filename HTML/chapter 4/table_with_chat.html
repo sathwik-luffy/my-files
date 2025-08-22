@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    table {
+      width: 70%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Table in HTML</h1>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Learning</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>Sathwik</td>
+        <td>HTML Learner</td>
+        <td>Learning</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Sathwik</td>
+        <td>C</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Sathwik</td>
+        <td>C++</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Sathwik</td>
+        <td>Python</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td colspan="1"> sathwik</td>
+        <td colspan=""> sathwik</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    // Automatically add numbering to S.No column
+    const rows = document.querySelectorAll("#myTable tbody tr");
+    rows.forEach((row, index) => {
+      row.cells[0].textContent = index + 1;
+    });
+  </script>
+</body>
+</html>

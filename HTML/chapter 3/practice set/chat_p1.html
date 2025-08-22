@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Online Shopping</title>
+
+  <!-- CSS Styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 10px;
+    }
+    header div:first-child {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 16px;
+    }
+    main {
+      padding: 20px;
+    }
+    main h1 {
+      color: #111;
+    }
+    main img {
+      margin-right: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    main img:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      text-align: center;
+      background-color: #232f3e;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script>
+    function showMessage(product) {
+      alert("You clicked on: " + product);
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div>amazon</div>
+    <div>
+      <a href="/home">home</a>
+      <a href="/about">about</a>
+      <a href="/order">order</a>
+      <a href="/sell">sell</a>
+      <a href="/bestsellers">best sellers</a>
+      <a href="/mobiles">mobile</a>
+      <a href="/prime">prime</a>
+    </div>
+    <hr />
+  </header>
+
+  <main>
+    <h1>Deals You Might Like</h1>
+    <img src="https://m.media-amazon.com/images/I/61dgl2srHDL._AC_SY145_.jpg" alt="speaker" height="120" onclick="showMessage('Speaker')" />
+    <img src="https://m.media-amazon.com/images/I/51iABjSt3BS._AC_SY145_.jpg" alt="Headphones" height="120" onclick="showMessage('Headphones')" />
+  </main>
+
+  <footer>
+    &copy; 2025 Amazon Clone — All rights reserved.
+  </footer>
+</body>
+</html>
