@@ -1,0 +1,20 @@
+/*     * is known as asterisk      */
+/*      *{}-->  Universal Selector which select whole html codes */
+*{
+    color: blue;
+}
+
+/* h1{}-->  Element Selector  */
+
+
+/* #myId { }--> id selecter   
+        give a  id to a element in html then use id selecter to make css */
+#h1{
+    color: crimson;
+}
+#h2{
+    color: aqua;
+}
+button{
+    color: blue;
+}

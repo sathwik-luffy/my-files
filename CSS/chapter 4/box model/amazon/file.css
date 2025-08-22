@@ -1,0 +1,58 @@
+
+
+div {
+    background-color: #0f1111;
+    height: 60px;
+    color: azure;
+    ;
+}
+
+a {
+    color: orange;
+}
+
+.info {
+    color: white;
+}
+
+#account {
+    margin-left: 200px;
+
+}
+
+#mycart {
+    margin-left: 200px;
+
+}
+
+#contact {
+    margin-left: 200px;
+}
+
+label {
+    margin-left: 200px;
+}
+
+button {
+
+    background-color: orange;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    
+    display: inline-block;
+}
+#content{
+    height: 500px;
+    background-color: white;
+}
+#footer{
+    height: 10px;
+
+}
+#copy{
+    color: wheat;
+    text-align: center;
+}
